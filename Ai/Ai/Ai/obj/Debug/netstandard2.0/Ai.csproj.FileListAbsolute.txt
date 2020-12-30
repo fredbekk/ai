@@ -1,4 +1,3 @@
-C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\Ai.csprojAssemblyReference.cache
 C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\AddWord.xaml.g.cs
 C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\MainPage.xaml.g.cs

@@ -3,7 +3,7 @@
 	.section	.rodata.env.str.1,"aMS",@progbits,1
 	.type	.L.env.str.1, @object
 .L.env.str.1:
-	.asciz	"com.companyname.ai"
+	.asciz	"com.mistermoose.ai"
 	.size	.L.env.str.1, 19
 	.section	.data.application_config,"aw",@progbits
 	.type	application_config, @object
@@ -73,7 +73,7 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",@progbits,1
 	.type	.L.env.str.8, @object
 .L.env.str.8:
-	.asciz	"a91121bf-ac93-4ea3-af59-a2fad59641a2"
+	.asciz	"8de32945-b2e7-4bdd-a89e-5920e8af7462"
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",@progbits,1
 	.type	.L.env.str.9, @object
