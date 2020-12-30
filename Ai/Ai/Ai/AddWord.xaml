@@ -1,10 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Ai.AddWord">
+             x:Class="Ai.AddWord"
+             Title="Add word">
+    <ContentPage.Resources>
+        <!-- Implicit styles -->
+        <Style TargetType="{x:Type Editor}">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource AppBackgroundColor}" />
+        </Style>
+
+        <Style TargetType="Button"
+               ApplyToDerivedTypes="True"
+               CanCascade="True">
+            <Setter Property="FontSize" Value="Medium" />
+            <Setter Property="BackgroundColor" Value="#1976D2" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="HeightRequest" Value="100" />
+            
+        </Style>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
-
+            <Editor Placeholder="Enter your word"
+                Text="{Binding Name}"
+                HeightRequest="100" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Save as Subject"
+                    Clicked="SaveSubjectClicked" />
+                <Button Grid.Column="1"
+                    Text="Save as Verb"
+                    Clicked="SaveVerbClicked"/>
+                <Button Grid.Column="2"
+                        Text="Save as Place"
+                        Clicked="SavePlaceClicked" />
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
