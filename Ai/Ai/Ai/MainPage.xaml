@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ai.MainPage"
+             Title="Artificial Imagination">
+    <ContentPage.Resources>
+        <!-- Implicit styles -->
+        <Style TargetType="{x:Type ListView}">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource AppBackgroundColor}" />
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+"
+                     Clicked="AddWord_Clicked" />
+    </ContentPage.ToolbarItems>
+    <StackLayout Margin="{StaticResource PageMargin}">
+        <Button Text="Generate"
+                    Clicked="OnGenerateClicked" />
+    </StackLayout>
+
+</ContentPage>

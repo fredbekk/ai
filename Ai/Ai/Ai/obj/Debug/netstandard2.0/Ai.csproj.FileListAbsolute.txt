@@ -1,0 +1,15 @@
+C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\Ai.csprojAssemblyReference.cache
+C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\AddWord.xaml.g.cs
+C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\Ai.AssemblyInfoInputs.cache
+C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\Ai.AssemblyInfo.cs
+C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\Ai.csproj.CoreCompileInputs.cache
+C:\Source\ai\Ai\Ai\Ai\bin\Debug\netstandard2.0\Ai.deps.json
+C:\Source\ai\Ai\Ai\Ai\bin\Debug\netstandard2.0\Ai.dll
+C:\Source\ai\Ai\Ai\Ai\bin\Debug\netstandard2.0\ref\Ai.dll
+C:\Source\ai\Ai\Ai\Ai\bin\Debug\netstandard2.0\Ai.pdb
+C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\Ai.dll
+C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\ref\Ai.dll
+C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\Ai.pdb
