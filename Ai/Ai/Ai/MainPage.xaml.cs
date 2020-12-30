@@ -1,4 +1,5 @@
-﻿using Ai.Models;
+﻿using Ai.Engine;
+using Ai.Models;
 using System;
 using System.Linq;
 using Xamarin.Forms;
@@ -35,6 +36,13 @@ namespace Ai
             if (!subjects.Any() || !verbs.Any() || !places.Any())
             {
                 DependencyService.Get<IToast>().Show("Not enough words to generate something");
+            }
+            else
+            {
+                var generator = new Generator();
+                var thing = generator.Generate(subjects, verbs, places);
+
+                DependencyService.Get<IToast>().Show($"Draw a {thing.Item1} that is {thing.Item2} in {thing.Item3}");
             }
         }
     }
