@@ -1,5 +1,6 @@
 ﻿using Ai.Engine;
 using Ai.Models;
+using Ai.ViewModels;
 using System;
 using System.Linq;
 using Xamarin.Forms;
@@ -11,11 +12,6 @@ namespace Ai
         public MainPage()
         {
             InitializeComponent();
-        }
-
-        protected override async void OnAppearing()
-        {
-            base.OnAppearing();
         }
 
         async void AddWord_Clicked(object sender, EventArgs e)
@@ -42,7 +38,12 @@ namespace Ai
                 var generator = new Generator();
                 var thing = generator.Generate(subjects, verbs, places);
 
-                DependencyService.Get<IToast>().Show($"Draw a {thing.Item1} that is {thing.Item2} in {thing.Item3}");
+                var result = new Result() { Text = $"Draw a {thing.Item1} that is {thing.Item2} in/on {thing.Item3}" };
+
+                await Navigation.PushAsync(new ResultPage
+                {
+                    BindingContext = result
+                });
             }
         }
     }

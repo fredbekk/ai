@@ -14,9 +14,9 @@ namespace Ai.Engine
             var placesLength = places.Count();
 
             Random r = new Random();
-            var subjectIndex = r.Next(0, subjectsLength - 1);
-            var verbIndex = r.Next(0, verbsLength - 1);
-            var placesIndex = r.Next(0, placesLength - 1);
+            var subjectIndex = r.Next(0, subjectsLength);
+            var verbIndex = r.Next(0, verbsLength);
+            var placesIndex = r.Next(0, placesLength);
 
             return (subjects[subjectIndex].Name, verbs[verbIndex].Name, places[placesIndex].Name);
         }

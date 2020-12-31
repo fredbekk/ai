@@ -12,3 +12,4 @@ C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\Ai.dll
 C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\ref\Ai.dll
 C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\Ai.pdb
+C:\Source\ai\Ai\Ai\Ai\obj\Debug\netstandard2.0\ResultPage.xaml.g.cs
