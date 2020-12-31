@@ -22,7 +22,7 @@
                 <DataTemplate>
                     <TextCell Text="{Binding Name}"
                           TextColor="Black"
-                          Detail="{Binding Created}" />
+                          Detail="{Binding Type}" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

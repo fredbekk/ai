@@ -19,7 +19,7 @@ namespace Ai
             base.OnAppearing();
 
             var items = await App.Database.GetAll();
-            listView.ItemsSource = items.OrderByDescending(i => i.Created);
+            listView.ItemsSource = items.OrderBy(i => i.Name);
         }
 
         async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
