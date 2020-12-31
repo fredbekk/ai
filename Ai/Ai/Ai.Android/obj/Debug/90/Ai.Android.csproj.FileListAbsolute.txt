@@ -498,3 +498,4 @@ C:\Source\ai\Ai\Ai\Ai.Android\obj\Debug\90\android\bin\com.mistermoose.ai.apk
 C:\Source\ai\Ai\Ai\Ai.Android\obj\Debug\90\android\bin\com.mistermoose.ai.aab
 C:\Source\ai\Ai\Ai\Ai.Android\obj\Debug\90\android\bin\com.mistermoose.ai.apks
 C:\Source\ai\Ai\Ai\Ai.Android\obj\Debug\90\android\src\com\mistermoose\ai\R.java
+C:\Source\ai\Ai\Ai\Ai.Android\bin\Debug\Resources\drawable\settings.svg

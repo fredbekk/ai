@@ -15,19 +15,14 @@ namespace Ai.Data
             _database.CreateTableAsync<Word>().Wait();
         }
 
-        public Task<List<Word>> GetAllSubjects()
+        public Task<List<Word>> GetAll(WordType? type = null)
         {
-            return _database.Table<Word>().Where(w => w.Type == WordType.Subject).ToListAsync();
-        }
+            if(type == null)
+            {
+                return _database.Table<Word>().ToListAsync();
+            }
 
-        public Task<List<Word>> GetAllVerbs()
-        {
-            return _database.Table<Word>().Where(w => w.Type == WordType.Verb).ToListAsync();
-        }
-
-        public Task<List<Word>> GetAllPlaces()
-        {
-            return _database.Table<Word>().Where(w => w.Type == WordType.Place).ToListAsync();
+            return _database.Table<Word>().Where(w => w.Type == type).ToListAsync();
         }
 
         public Task<Word> Get(int id)

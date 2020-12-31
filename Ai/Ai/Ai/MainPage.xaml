@@ -11,8 +11,7 @@
         </Style>
     </ContentPage.Resources>
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="+"
-                     Clicked="AddWord_Clicked" />
+        <ToolbarItem Name="settings" Icon="settings.svg" Priority="0" Order="Primary" Activated="Settings_Clicked" />
     </ContentPage.ToolbarItems>
     <StackLayout Margin="{StaticResource PageMargin}">
         <Button Text="Generate"

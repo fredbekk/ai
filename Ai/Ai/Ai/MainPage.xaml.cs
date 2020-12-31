@@ -14,20 +14,19 @@ namespace Ai
             InitializeComponent();
         }
 
-        async void AddWord_Clicked(object sender, EventArgs e)
+        async void Settings_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AddWord
+            await Navigation.PushAsync(new SettingsPage
             {
-                BindingContext = new Word()
             });
         }
 
         async void OnGenerateClicked(object sender, EventArgs e)
         {
 
-            var subjects = await App.Database.GetAllSubjects();
-            var verbs = await App.Database.GetAllVerbs();
-            var places = await App.Database.GetAllPlaces();
+            var subjects = await App.Database.GetAll(WordType.Subject);
+            var verbs = await App.Database.GetAll(WordType.Verb);
+            var places = await App.Database.GetAll(WordType.Place);
 
             if (!subjects.Any() || !verbs.Any() || !places.Any())
             {

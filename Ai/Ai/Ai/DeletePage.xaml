@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ai.DeletePage"
+             Title="Delete Words">
+    <ContentPage.Resources>
+        <Style TargetType="{x:Type ListView}">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource AppBackgroundColor}" />
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ListView x:Name="listView"
+              Margin="{StaticResource PageMargin}"
+              ItemSelected="OnListViewItemSelected">
+            <ListView.Header>
+                <StackLayout Padding="10,5,0,5" BackgroundColor="AliceBlue">
+                    <Label Text="Tap a word to delete it" />
+                </StackLayout>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}"
+                          TextColor="Black"
+                          Detail="{Binding Created}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
