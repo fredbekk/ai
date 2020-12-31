@@ -3,6 +3,7 @@ using Ai.Models;
 using Ai.ViewModels;
 using System;
 using System.Linq;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Ai
@@ -12,6 +13,20 @@ namespace Ai
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            Accelerometer.ShakeDetected += this.OnGenerateClicked;
+            Accelerometer.Start(SensorSpeed.Game);
+            base.OnAppearing();
+        }
+
+        protected override void OnDisappearing()
+        {
+            Accelerometer.Stop();
+            Accelerometer.ShakeDetected -= this.OnGenerateClicked;
+            base.OnDisappearing();
         }
 
         async void Settings_Clicked(object sender, EventArgs e)
